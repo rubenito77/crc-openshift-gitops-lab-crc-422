@@ -6,10 +6,7 @@ namespace: gitops-demo-dev
 resources:
   - ../../base
 
-labels:
-  - pairs:
-      app.kubernetes.io/instance: app-demo-dev
-      app.kubernetes.io/environment: dev
-      app.kubernetes.io/managed-by: argocd
-    includeSelectors: false
-    includeTemplates: true
+commonLabels:
+  app.kubernetes.io/instance: app-demo-dev
+  app.kubernetes.io/environment: dev
+  app.kubernetes.io/managed-by: argocd

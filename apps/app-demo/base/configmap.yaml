@@ -13,7 +13,7 @@ data:
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CRC OpenShift GitOps Lab</title>
+        <title>CRC OpenShift GitOps Lab - V1</title>
         <style>
           body {
             margin: 0;
@@ -32,6 +32,25 @@ data:
             background: white;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
           }
+          .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+            margin-bottom: 1rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            background: #ee0000;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+          }
+          .version-badge small {
+            padding-left: 0.55rem;
+            border-left: 1px solid rgba(255, 255, 255, 0.55);
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: normal;
+          }
           h1 {
             margin-top: 0;
             color: #a30000;
@@ -45,6 +64,10 @@ data:
       </head>
       <body>
         <main>
+          <div class="version-badge">
+            <span>V1</span>
+            <small>Version 1</small>
+          </div>
           <h1>OpenShift GitOps en CRC</h1>
           <p>Aplicacion desplegada declarativamente mediante Argo CD.</p>
           <p>Ambiente: <code>dev</code></p>

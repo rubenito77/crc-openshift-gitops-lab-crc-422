@@ -13,7 +13,7 @@ data:
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CRC OpenShift GitOps Lab - V2</title>
+        <title>CRC OpenShift GitOps Lab - V1</title>
         <style>
           body {
             margin: 0;
@@ -21,16 +21,16 @@ data:
             display: grid;
             place-items: center;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #eaf2ff, #f7f9fc);
+            background: #f4f6f8;
             color: #17212b;
           }
           main {
             width: min(720px, 90%);
             padding: 2rem;
-            border-top: 6px solid #0066cc;
-            border-radius: 12px;
+            border-top: 6px solid #ee0000;
+            border-radius: 8px;
             background: white;
-            box-shadow: 0 12px 32px rgba(0, 65, 130, 0.18);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
           }
           .version-badge {
             display: inline-flex;
@@ -39,7 +39,7 @@ data:
             margin-bottom: 1rem;
             padding: 0.45rem 0.8rem;
             border-radius: 999px;
-            background: #0066cc;
+            background: #ee0000;
             color: white;
             font-weight: 700;
             letter-spacing: 0.04em;
@@ -53,13 +53,7 @@ data:
           }
           h1 {
             margin-top: 0;
-            color: #004b95;
-          }
-          .release-note {
-            padding: 0.85rem 1rem;
-            border-left: 4px solid #0066cc;
-            border-radius: 4px;
-            background: #edf5ff;
+            color: #a30000;
           }
           code {
             padding: 0.15rem 0.35rem;
@@ -71,14 +65,11 @@ data:
       <body>
         <main>
           <div class="version-badge">
-            <span>V2</span>
-            <small>Version 2</small>
+            <span>V1</span>
+            <small>Version 1</small>
           </div>
           <h1>OpenShift GitOps en CRC</h1>
           <p>Aplicacion desplegada declarativamente mediante Argo CD.</p>
-          <p class="release-note">
-            V2 incorpora una nueva identidad visual y queda preparada para demostrar rollback.
-          </p>
           <p>Ambiente: <code>dev</code></p>
           <p>Cluster: <code>OpenShift 4.22.1 sobre CRC</code></p>
         </main>
